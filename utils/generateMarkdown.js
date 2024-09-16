@@ -22,33 +22,27 @@ function renderLicenseSection(license) {
   if (license === 'None') {
     return '';
   }
-  return `## License\nThis project is ${renderLicenseLink(license)} under the ${license} license.`;
+  return `## License\n#### This project is ${renderLicenseLink(license)} under the ${license} license.\n${renderLicenseBadge(license)}`;
 }
 
 // Step 4: Create a function to generate markdown for README
 function generateMarkdown(data) {
   let mdStr = `# ${data.title}
-
-  ${renderLicenseBadge(data.license)}
-  
-## Description
-${data.description}
-`;
-
+  ## Description
+  ${data.description}
+  `;
   // Conditionally add the Repo URL section only if repoURL is provided
   if (data.repoURL) {
     mdStr += `\n## Repository URL\n[Project Repository](${data.repoURL})\n`;
   }
-
   // Add Table of Contents
   mdStr += `
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
 
 ## Installation
 ${data.installation}
