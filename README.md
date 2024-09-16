@@ -1,59 +1,34 @@
+# Example Project
 
-# [Module 9] ReadMe Writer: Interactive Documentation Tool
+  ![License](https://img.shields.io/badge/license-MIT-green)
+  
+## Description
+Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
 
-## Overview
-
-ReadMe Writer is a web-based tool designed to simplify the process of creating professional and well-structured README files for projects. By guiding users through a series of prompts, ReadMe Writer ensures that all necessary sections are included and formatted correctly. The tool provides a preview of the README file as it is being created, allowing users to see the final output in real-time.
-
-## Features
-
-- **Interactive Prompts**: Users are guided through a series of questions to gather information for each section of the README.
-- **Real-Time Preview**: View the README file as it is being created with a real-time preview feature.
-- **Template Options**: Choose from various README templates to match the style and needs of your project.
-- **Export Functionality**: Easily export the final README file for use in your project repository.
-
-## Technologies Used
-
-- **HTML/CSS**: For building the user interface of the application.
-- **JavaScript**: For handling user interactions and updating the real-time preview.
-- **Node.js**: Backend logic to process user input and generate the README file.
-- **Express.js**: To manage the server and routing functionalities.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
-
-To install and run ReadMe Writer locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd readme-writer
-   ```
-3. Install the necessary dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the application:
-   ```bash
-   npm start
-   ```
+git clone <repo-url>
 
 ## Usage
-
-1. Open your web browser and navigate to:
-   ```plaintext
-   http://localhost:3000
-   ```
-2. Follow the prompts to fill in the details for your README file.
-3. Preview the README as you create it, and export the final version once completed.
+`node index.js` to launch README.md Writer node project
 
 ## License
+This project is [licensed](./LICENSE) under the MIT license.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+## Contributing
+Reach out to me (iggys4ur) via GitHub
 
-## Acknowledgments
+## Tests
+test input validation; valid input, output formatting
 
-- Thanks to the developers of Node.js and Express.js for providing the foundation for this tool.
-- Special thanks to all contributors who provided feedback and support during the development of ReadMe Writer.
+## Questions
+If you have any questions about the project, please reach out to:
+- GitHub: [iggys4ur](https://github.com/iggys4ur)
+- Email: [address@email.com]

@@ -1,20 +1,75 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// iggys4ur: Walled-Sandbox/TaskScheduler/generateMarkdown.js 
+// Project: README Generator
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// Step 1: Create a function that returns a license badge based on which license is passed in
+function renderLicenseBadge(license) {
+  if (license === 'None') {
+    return '';
+  }
+  return `![License](https://img.shields.io/badge/license-${license}-green)`;
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// Step 2: Create a function that returns the license link
+function renderLicenseLink(license) {
+  if (license === 'None') {
+    return '';
+  }
+  return `[licensed](./LICENSE)`;
+}
 
-// TODO: Create a function to generate markdown for README
+// Step 3: Create a function that returns the license section of README
+function renderLicenseSection(license) {
+  if (license === 'None') {
+    return '';
+  }
+  return `## License\nThis project is ${renderLicenseLink(license)} under the ${license} license.`;
+}
+
+// Step 4: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  let mdStr = `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+  
+## Description
+${data.description}
 `;
+
+  // Conditionally add the Repo URL section only if repoURL is provided
+  if (data.repoURL) {
+    mdStr += `\n## Repository URL\n[Project Repository](${data.repoURL})\n`;
+  }
+
+  // Add Table of Contents
+  mdStr += `
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+${renderLicenseSection(data.license)}
+
+## Contributing
+${data.contributing}
+
+## Questions & Contact
+If you have any questions about the project, please reach out to:
+- GitHub: [${data.github}](https://github.com/${data.github})
+- Email: [${data.email}]
+`;
+
+  // Return the generated markdown string
+  return mdStr;
 }
 
 module.exports = generateMarkdown;
+
