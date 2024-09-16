@@ -34,10 +34,6 @@ To install and run ReadMe Writer locally, follow these steps:
    ```bash
    npm install
    ```
-4. Start the application:
-   ```bash
-   npm start
-   ```
 
 ## Usage
 
