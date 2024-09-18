@@ -18,6 +18,22 @@ ReadMe Writer is a web-based tool designed to simplify the process of creating p
 - **JavaScript**: For handling user interactions and updating the real-time preview.
 - **Node.js**: Backend logic to process user input and generate the README file.
 
+## Mockups & Screenshots
+
+---
+
+### Usage Animation:
+
+![Usage Animation](./img/mod-9_animation.gif)
+
+---
+
+### Example Output:
+
+![Example Output](./img/screenshot_example-output.png)
+
+---
+
 ## Installation
 
 To install and run ReadMe Writer locally, follow these steps:
